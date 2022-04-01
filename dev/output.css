@@ -1019,6 +1019,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: #00000070;
 }
 
+.bg-\[\#ffffff90\] {
+  background-color: #ffffff90;
+}
+
 .bg-gradient-to-bl {
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
 }

@@ -141,7 +141,7 @@ export class Login extends LitElement {
         class="w-full h-full bg-[#00000070] fixed top-0 left-0 right-0 bottom-0 z-30 flex justify-center items-center p-4 py-6"
       >
         <div
-          class="overflow-y-scroll py-5 max-w-[28.5rem] max-h-[43.125rem] w-full h-full rounded-xl text-black pt-5 px-7 z-[5] font-sofia animate-fadeInAlt backdrop backdrop-filter backdrop-blur-3xl bg-[#ffffff80]"
+          class="overflow-y-scroll py-5 max-w-[28.5rem] max-h-[43.125rem] w-full h-full rounded-xl text-black pt-5 px-7 z-[5] font-sofia animate-fadeInAlt backdrop backdrop-filter backdrop-blur-3xl bg-[#ffffff90]"
         >
           <div class="flex flex-col text-center h-full gap-2 sm:gap-3 relative">
             <slot></slot>
