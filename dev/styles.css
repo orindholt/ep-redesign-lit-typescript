@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .hide {
+    @apply hidden !important;
+  }
+}
+
+body {
+  font-size: 0.875rem;
+}
+
+*::shadow {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+  user-select: none;
+  font-weight: inherit;
+}
+
+button:focus,
+a:focus {
+  border: none;
+  outline: 2px solid #eaeff750;
+}
+
+button,
+a {
+  color: inherit;
+}
+
+select,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input,
+button,
+textarea {
+  border: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type='submit'] {
+  cursor: pointer;
+}

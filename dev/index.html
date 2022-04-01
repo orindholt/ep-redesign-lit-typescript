@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EP - TypeScript</title>
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="../node_modules/lit/polyfill-support.js"></script>
+    <script type="module" src="./components/login.js"></script>
+    <link rel="stylesheet" href="./output.css" />
+    <!--Tailwind Output-->
+    <link rel="stylesheet" href="https://use.typekit.net/uin3khw.css" />
+    <!--Font Link-->
+  </head>
+  <body>
+    <div id="wrapper" class="pt-16 sm:pt-[4.563rem] bg-lightBlue">
+      <nav
+        class="
+          flex
+          justify-between
+          px-[5%]
+          h-16
+          bg-lightBlue
+          items-center
+          shadow-md
+          z-20
+          fixed
+          w-full
+          top-0
+          sm:h-[4.563rem]
+          gap-2
+        "
+      >
+        <a
+          href="/"
+          class="md:hover:scale-105 md:inline-block md:transition-transform"
+          ><img src="./images/header.svg" alt="header-logo" class="w-full" />
+        </a>
+        <div class="flex items-center sm:justify-between">
+          <!--Menu Dekstop-->
+          <ul
+            class="
+              hidden
+              md:flex md:items-center
+              menuList
+              font-bold
+              gap-[3vw]
+              mr-[4vw]
+            "
+          >
+            <!--Dropdown Item Desktop 00-->
+            <li class="flex flex-col items-start gap-2">
+              <a
+                href="#"
+                class="
+                  flex
+                  items-center
+                  gap-3
+                  lg:text-lg
+                  text-base text-black
+                  font-sofia
+                "
+              >
+                Hvordan virker det?
+              </a>
+            </li>
+            <!--Dropdown Item Desktop End 00-->
+            <!--Dropdown Item Desktop 01-->
+            <li class="flex flex-col items-start gap-2">
+              <button
+                href="#"
+                data-active="false"
+                class="
+                  dropdownBtn
+                  flex
+                  items-center
+                  gap-3
+                  lg:text-lg
+                  text-base text-black
+                  font-sofia
+                "
+              >
+                Casinos
+                <svg
+                  viewBox="0 0 7 6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="mt-1 inline-block w-1.5 triangle"
+                >
+                  <path
+                    d="M2.636,1.481a1,1,0,0,1,1.728,0L6.123,4.5A1,1,0,0,1,5.259,6H1.741A1,1,0,0,1,.877,4.5Z"
+                    fill="currentColor"
+                    data-name="Polygon 4"
+                  />
+                </svg>
+              </button>
+              <!--Dropdown List 01-->
+              <ul
+                class="
+                  dropdown
+                  flex flex-col
+                  gap-3
+                  sm:gap-0
+                  overflow-hidden
+                  animate-slideInAlt
+                  dropdown
+                  hide
+                  sm:absolute
+                  sm:top-[4.5rem]
+                  sm:bg-lightBlue
+                  sm:rounded-b-md
+                  sm:shadow-sm
+                  sm:max-w-[170px]
+                "
+              >
+                <li
+                  class="
+                    font-normal
+                    text-[#959CA7]
+                    lg:text-[17px]
+                    text-base
+                    sm:p-4
+                  "
+                >
+                  <a href="#" class="font-sofia">Tilbud</a>
+                </li>
+                <hr class="border-[#dee1e6]" />
+                <li
+                  class="
+                    font-normal
+                    text-[#959CA7]
+                    lg:text-[17px]
+                    text-base
+                    sm:p-4
+                  "
+                >
+                  <a href="#" class="font-sofia">Casino anmeldelser</a>
+                </li>
+                <hr class="border-[#dee1e6]" />
+                <li
+                  class="
+                    font-normal
+                    text-[#959CA7]
+                    lg:text-[17px]
+                    text-base
+                    sm:p-4
+                  "
+                >
+                  <a href="#" class="font-sofia">Hotte Online Casinoer</a>
+                </li>
+                <hr class="border-[#dee1e6]" />
+                <li
+                  class="
+                    font-normal
+                    text-[#959CA7]
+                    lg:text-[17px]
+                    text-base
+                    sm:p-4
+                  "
+                >
+                  <a href="#" class="font-sofia">Nye Online Casinoer</a>
+                </li>
+              </ul>
+            </li>
+            <!--Dropdown Item Desktop End 01-->
+            <!--Dropdown Item Desktop 02-->
+            <li class="flex flex-col items-start gap-2">
+              <button
+                href="#"
+                data-active="false"
+                class="
+                  dropdownBtn
+                  flex
+                  items-center
+                  gap-3
+                  lg:text-lg
+                  text-base text-black
+                  font-sofia
+                "
+              >
+                Spil
+                <svg
+                  viewBox="0 0 7 6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="mt-1 inline-block w-1.5 triangle"
+                >
+                  <path
+                    d="M2.636,1.481a1,1,0,0,1,1.728,0L6.123,4.5A1,1,0,0,1,5.259,6H1.741A1,1,0,0,1,.877,4.5Z"
+                    fill="currentColor"
+                    data-name="Polygon 4"
+                  />
+                </svg>
+              </button>
+              <!--Dropdown List 02-->
+              <ul
+                class="
+                  dropdown
+                  flex flex-col
+                  gap-3
+                  sm:gap-0
+                  overflow-hidden
+                  animate-slideInAlt
+                  dropdown
+                  hide
+                  sm:absolute
+                  sm:top-[4.5rem]
+                  sm:bg-lightBlue
+                  sm:rounded-b-md
+                  sm:shadow-sm
+                  sm:max-w-[170px]
+                "
+              >
+                <li
+                  class="
+                    font-normal
+                    text-[#959CA7]
+                    lg:text-[17px]
+                    text-base
+                    sm:p-4
+                  "
+                >
+                  <a href="#" class="font-sofia">Gratis konkurrencer</a>
+                </li>
+                <hr class="border-[#dee1e6]" />
+                <li
+                  class="
+                    font-normal
+                    text-[#959CA7]
+                    lg:text-[17px]
+                    text-base
+                    sm:p-4
+                  "
+                >
+                  <a href="#" class="font-sofia">Vindere</a>
+                </li>
+                <hr class="border-[#dee1e6]" />
+                <li
+                  class="
+                    font-normal
+                    text-[#959CA7]
+                    lg:text-[17px]
+                    text-base
+                    sm:p-4
+                  "
+                >
+                  <a href="#" class="font-sofia">Spilanmeldelser</a>
+                </li>
+              </ul>
+            </li>
+            <!--Dropdown Item Desktop End 02-->
+            <!--Dropdown Item Desktop 03-->
+            <li class="flex flex-col items-start gap-2">
+              <button
+                href="#"
+                data-active="false"
+                class="
+                  dropdownBtn
+                  flex
+                  items-center
+                  gap-3
+                  lg:text-lg
+                  text-base text-black
+                  font-sofia
+                "
+              >
+                Shop
+                <svg
+                  viewBox="0 0 7 6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="mt-1 inline-block w-1.5 triangle"
+                >
+                  <path
+                    d="M2.636,1.481a1,1,0,0,1,1.728,0L6.123,4.5A1,1,0,0,1,5.259,6H1.741A1,1,0,0,1,.877,4.5Z"
+                    fill="currentColor"
+                    data-name="Polygon 4"
+                  />
+                </svg>
+              </button>
+              <!--Dropdown List 03-->
+              <ul
+                class="
+                  dropdown
+                  flex flex-col
+                  gap-3
+                  sm:gap-0
+                  overflow-hidden
+                  animate-slideInAlt
+                  dropdown
+                  hide
+                  sm:absolute
+                  sm:top-[4.5rem]
+                  sm:bg-lightBlue
+                  sm:rounded-b-md
+                  sm:shadow-sm
+                  sm:max-w-[170px]
+                "
+              >
+                <li
+                  class="
+                    font-normal
+                    text-[#959CA7]
+                    lg:text-[17px]
+                    text-base
+                    sm:p-4
+                  "
+                >
+                  <a href="#" class="font-sofia">Category 1</a>
+                </li>
+                <hr class="border-[#dee1e6]" />
+                <li
+                  class="
+                    font-normal
+                    text-[#959CA7]
+                    lg:text-[17px]
+                    text-base
+                    sm:p-4
+                  "
+                >
+                  <a href="#" class="font-sofia">Category 2</a>
+                </li>
+                <hr class="border-[#dee1e6]" />
+                <li
+                  class="
+                    font-normal
+                    text-[#959CA7]
+                    lg:text-[17px]
+                    text-base
+                    sm:p-4
+                  "
+                >
+                  <a href="#" class="font-sofia">Category 3</a>
+                </li>
+              </ul>
+            </li>
+            <!--Dropdown Item Desktop End 03-->
+            <!--Search Desktop-->
+            <li class="lg:block hidden">
+              <form
+                action="/"
+                method="GET"
+                class="flex border-b pb-1 border-[#C2C8D1]"
+              >
+                <input
+                  type="text"
+                  id="search"
+                  name="search"
+                  class="bg-transparent placeholder:text-[#C2C8D1]"
+                  placeholder="Search here..."
+                />
+                <button type="submit" class="pr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.63"
+                    height="20.63"
+                    viewBox="0 0 20.63 20.63"
+                  >
+                    <g
+                      data-name="Group 664"
+                      fill="none"
+                      stroke="#c2c8d1"
+                      stroke-width="1.5"
+                    >
+                      <g
+                        data-name="Ellipse 4"
+                        transform="rotate(-45 11.155 4.62)"
+                      >
+                        <circle cx="6.534" cy="6.534" r="6.534" stroke="none" />
+                        <circle cx="6.534" cy="6.534" r="5.784" />
+                      </g>
+                      <path
+                        data-name="Line 15"
+                        stroke-linecap="round"
+                        d="M6.534 12.685v8.456"
+                        transform="rotate(-45 11.155 4.62)"
+                      />
+                    </g>
+                  </svg>
+                </button>
+              </form>
+            </li>
+          </ul>
+          <!--Menu Desktop End-->
+          <div class="flex">
+            <button class="p-2 w-10 h-10 rounded bg-black mr-4" id="loginBtn">
+              <img src="./images/login.svg" alt="Login Icon" />
+            </button>
+            <button class="mr-4 lg:hidden">
+              <img src="./images/search.svg" alt="search icon" />
+            </button>
+            <button class="md:hidden" id="menuBtn">
+              <img alt="menu icon" class="w-8" src="./images/burger-menu.svg" />
+            </button>
+            <div class="relative z-10">
+              <button
+                class="
+                  regionBtn
+                  min-w-[2.5rem]
+                  h-10
+                  rounded-md
+                  relative
+                  md:block
+                  hidden
+                "
+              >
+                <img
+                  alt="Region Selector"
+                  src="./images/flags/german.svg"
+                  class="w-10 max-h-[2.5rem]"
+                />
+                <p
+                  class="
+                    state
+                    text-white text-[8px]
+                    font-bold
+                    bottom-[1px]
+                    left-[1px]
+                    absolute
+                  "
+                ></p>
+              </button>
+              <ul
+                class="
+                  regionMenu
+                  hide
+                  flex flex-col
+                  gap-2
+                  shadow-xl
+                  bg-mediumGray
+                  absolute
+                  pt-[3.375rem]
+                  -top-[0.4rem]
+                  z-[-1]
+                  right-[-0.3rem]
+                  rounded-lg
+                  p-[5px]
+                  overflow-hidden
+                  animate-slideInAlt
+                "
+              ></ul>
+            </div>
+          </div>
+        </div>
+        <!--Menu Mobile-->
+        <nav
+          id="menu"
+          class="
+            md:hidden
+            fixed
+            top-16
+            right-0
+            bottom-0
+            left-0
+            bg-lightBlue
+            z-10
+            shadow-md
+            animate-slideIn
+            hide
+            overflow-y-scroll
+          "
+        >
+          <div class="w-full relative opacity-0 animate-fadeIn">
+            <!--Dropdown List Mobile-->
+            <ul class="menuList font-bold">
+              <div
+                class="
+                  flex
+                  justify-between
+                  items-center
+                  py-4
+                  pl-[20%]
+                  pr-[5%]
+                  gap-5
+                "
+              >
+                <!--Region Btn Mobile-->
+                <li class="flex flex-col items-start gap-2">
+                  <a
+                    href="#"
+                    class="
+                      flex
+                      items-center
+                      gap-3
+                      text-[19px]
+                      mt-4
+                      mb-2
+                      text-black
+                      font-sofia
+                    "
+                  >
+                    Hvordan virker det?
+                  </a>
+                </li>
+                <div class="relative z-10">
+                  <button
+                    class="regionBtn min-w-[2.5rem] h-10 rounded-md relative"
+                  >
+                    <img
+                      alt="Region Selector"
+                      src="./images/flags/german.svg"
+                      class="w-10 max-h-[2.5rem]"
+                    />
+                    <p
+                      class="
+                        state
+                        text-white text-[8px]
+                        font-bold
+                        bottom-[1px]
+                        left-[1px]
+                        absolute
+                      "
+                    ></p>
+                  </button>
+                  <ul
+                    class="
+                      regionMenu
+                      hide
+                      flex flex-col
+                      gap-2
+                      shadow-xl
+                      bg-mediumGray
+                      absolute
+                      pt-[3.375rem]
+                      -top-[0.4rem]
+                      z-[-1]
+                      right-[-0.3rem]
+                      rounded-lg
+                      p-[5px]
+                      overflow-hidden
+                      animate-slideInAlt
+                    "
+                  ></ul>
+                </div>
+                <!--Region Menu Mobile-->
+              </div>
+              <!--Dropdown Item Mobile 00-->
+              <hr class="border-[#dee1e6]" />
+              <!--Dropdown Item Mobile End 00-->
+              <!--Dropdown Item Mobile 01-->
+              <li class="pl-[20%] pb-4 flex flex-col items-start gap-2">
+                <a
+                  href="#"
+                  data-active="false"
+                  class="
+                    dropdownBtn
+                    flex
+                    items-center
+                    gap-3
+                    text-[19px]
+                    mt-4
+                    mb-2
+                    text-black
+                    font-sofia
+                  "
+                >
+                  Casinos
+                  <svg
+                    viewBox="0 0 7 6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mt-1 inline-block w-1.5 triangle"
+                  >
+                    <path
+                      d="M2.636,1.481a1,1,0,0,1,1.728,0L6.123,4.5A1,1,0,0,1,5.259,6H1.741A1,1,0,0,1,.877,4.5Z"
+                      fill="currentColor"
+                      data-name="Polygon 4"
+                    />
+                  </svg>
+                </a>
+                <ul
+                  class="
+                    dropdown
+                    flex flex-col
+                    gap-3
+                    overflow-hidden
+                    animate-slideInAlt
+                    dropdown
+                    hide
+                  "
+                >
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">Tilbud</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">Casino anmeldelser</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">Hotte Online Casinoer</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">Nye Online Casinoer</a>
+                  </li>
+                </ul>
+              </li>
+              <hr class="border-[#dee1e6]" />
+              <!--Dropdown Item Mobile End 01-->
+              <!--Dropdown Item Mobile 02-->
+              <li class="pl-[20%] pb-4 flex flex-col items-start gap-2">
+                <a
+                  href="#"
+                  data-active="false"
+                  class="
+                    dropdownBtn
+                    flex
+                    items-center
+                    gap-3
+                    text-[19px]
+                    mt-4
+                    mb-2
+                    text-black
+                    font-sofia
+                  "
+                >
+                  Spil
+                  <svg
+                    viewBox="0 0 7 6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mt-1 inline-block w-1.5 triangle"
+                  >
+                    <path
+                      d="M2.636,1.481a1,1,0,0,1,1.728,0L6.123,4.5A1,1,0,0,1,5.259,6H1.741A1,1,0,0,1,.877,4.5Z"
+                      fill="currentColor"
+                      data-name="Polygon 4"
+                    />
+                  </svg>
+                </a>
+                <ul
+                  class="
+                    dropdown
+                    flex flex-col
+                    gap-3
+                    sm:gap-0
+                    overflow-hidden
+                    animate-slideInAlt
+                    dropdown
+                    hide
+                    sm:absolute
+                    sm:top-[4.5rem]
+                    sm:bg-lightBlue
+                    sm:rounded-b-md
+                    sm:shadow-sm
+                    sm:max-w-[170px]
+                  "
+                >
+                  <li class="font-normal text-[#959CA7] text-[17px] sm:p-4">
+                    <a href="#" class="font-sofia">Tilbud</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px] sm:p-4">
+                    <a href="#" class="font-sofia">Vindere</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px] sm:p-4">
+                    <a href="#" class="font-sofia">Spilanmeldelser</a>
+                  </li>
+                </ul>
+              </li>
+              <hr class="border-[#dee1e6]" />
+              <!--Dropdown Item Mobile End 02-->
+              <!--Dropdown Item Mobile 03-->
+              <li class="pl-[20%] pb-4 flex flex-col items-start gap-2">
+                <a
+                  href="#"
+                  data-active="false"
+                  class="
+                    dropdownBtn
+                    flex
+                    items-center
+                    gap-1
+                    text-[19px]
+                    mt-4
+                    mb-2
+                    text-black
+                    font-sofia
+                  "
+                >
+                  Shop
+                  <svg
+                    class="w-[6%]"
+                    viewBox="0 0 21.497 21.656"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs>
+                      <clipPath id="a">
+                        <rect
+                          width="21.497"
+                          height="21.656"
+                          fill="currentColor"
+                          stroke="currentColor"
+                          stroke-width=".5"
+                          data-name="Rectangle 68"
+                        />
+                      </clipPath>
+                    </defs>
+                    <g
+                      clip-path="url(#a)"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width=".5"
+                      data-name="Group 565"
+                    >
+                      <path
+                        transform="translate(2.304 2.303)"
+                        d="M1.819,1.178c-.413,0-.816,0-1.219,0a.585.585,0,0,1-.556-.8A.549.549,0,0,1,.569.006q.9-.011,1.8,0A.576.576,0,0,1,2.938.55c.077.718.15,1.436.226,2.154.008.073.02.145.033.238H15.663a1.149,1.149,0,0,1,1.213.953,2.077,2.077,0,0,1-.055.724q-.667,3.158-1.352,6.312A1.75,1.75,0,0,1,13.7,12.347q-4.536,0-9.072,0a1.765,1.765,0,0,1-1.8-1.647c-.172-1.692-.358-3.383-.536-5.074Q2.06,3.453,1.835,1.28c0-.024-.007-.048-.016-.1M15.728,4.127H3.32c0,.045,0,.08.009.115q.1.922.195,1.844Q3.76,8.33,4,10.575a.591.591,0,0,0,.669.6h9a.6.6,0,0,0,.669-.542q.477-2.214.95-4.429l.445-2.074"
+                        data-name="Path 127"
+                      />
+                      <path
+                        transform="translate(-66.231 -260.35)"
+                        d="M73.822,279.7a1.763,1.763,0,1,1,1.766-1.759,1.769,1.769,0,0,1-1.766,1.759m0-1.176a.587.587,0,1,0-.584-.585.593.593,0,0,0,.584.585"
+                        data-name="Path 128"
+                      />
+                      <path
+                        transform="translate(-203.21 -260.35)"
+                        d="M219.617,277.936a1.763,1.763,0,1,1-1.766-1.759,1.768,1.768,0,0,1,1.766,1.759m-1.175.008a.587.587,0,1,0-.586.583.593.593,0,0,0,.586-.583"
+                        data-name="Path 129"
+                      />
+                    </g>
+                  </svg>
+                  <svg
+                    viewBox="0 0 7 6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mt-1 ml-2 inline-block w-1.5 triangle"
+                  >
+                    <path
+                      d="M2.636,1.481a1,1,0,0,1,1.728,0L6.123,4.5A1,1,0,0,1,5.259,6H1.741A1,1,0,0,1,.877,4.5Z"
+                      fill="currentColor"
+                      data-name="Polygon 4"
+                    />
+                  </svg>
+                </a>
+                <ul
+                  class="
+                    dropdown
+                    flex flex-col
+                    gap-3
+                    overflow-hidden
+                    animate-slideInAlt
+                    dropdown
+                    hide
+                  "
+                >
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">Category 1</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">Category 2</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">Category 3</a>
+                  </li>
+                </ul>
+              </li>
+              <hr class="border-[#dee1e6]" />
+              <!--Dropdown Item Mobile End 03-->
+              <!--Dropdown Item Mobile 04-->
+              <li class="pl-[20%] pb-4 flex flex-col items-start gap-2">
+                <a
+                  href="#"
+                  data-active="false"
+                  class="
+                    dropdownBtn
+                    flex
+                    items-center
+                    gap-3
+                    text-[19px]
+                    mt-4
+                    mb-2
+                    text-black
+                    font-sofia
+                  "
+                >
+                  About us
+                  <svg
+                    viewBox="0 0 7 6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mt-1 inline-block w-1.5 triangle"
+                  >
+                    <path
+                      d="M2.636,1.481a1,1,0,0,1,1.728,0L6.123,4.5A1,1,0,0,1,5.259,6H1.741A1,1,0,0,1,.877,4.5Z"
+                      fill="currentColor"
+                      data-name="Polygon 4"
+                    />
+                  </svg>
+                </a>
+                <ul
+                  class="
+                    dropdown
+                    flex flex-col
+                    gap-3
+                    overflow-hidden
+                    animate-slideInAlt
+                    dropdown
+                    hide
+                  "
+                >
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">Seals of aproval</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">Terms and conditions</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">Competition Terms</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">Privacy Policy</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">Cookie Policy</a>
+                  </li>
+                </ul>
+              </li>
+              <hr class="border-[#dee1e6]" />
+              <!--Dropdown Item Mobile End 04-->
+              <!--Dropdown Item Mobile 05-->
+              <li class="pl-[20%] pb-4 flex flex-col items-start gap-2">
+                <a
+                  href="#"
+                  data-active="false"
+                  class="
+                    dropdownBtn
+                    flex
+                    items-center
+                    gap-3
+                    text-[19px]
+                    mt-4
+                    mb-2
+                    text-black
+                    font-sofia
+                  "
+                >
+                  Learn more
+                  <svg
+                    viewBox="0 0 7 6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mt-1 inline-block w-1.5 triangle"
+                  >
+                    <path
+                      d="M2.636,1.481a1,1,0,0,1,1.728,0L6.123,4.5A1,1,0,0,1,5.259,6H1.741A1,1,0,0,1,.877,4.5Z"
+                      fill="currentColor"
+                      data-name="Polygon 4"
+                    />
+                  </svg>
+                </a>
+                <ul
+                  class="
+                    dropdown
+                    flex flex-col
+                    gap-3
+                    overflow-hidden
+                    animate-slideInAlt
+                    dropdown
+                    hide
+                  "
+                >
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">What is EkstaPont</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">Start using EkstraPoint</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">Why EkstraPoint</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">How to become top player</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">EkstraPoint User Tiers</a>
+                  </li>
+                </ul>
+              </li>
+              <hr class="border-[#dee1e6]" />
+              <!--Dropdown Item Mobile End 05-->
+              <!--Dropdown Item Mobile 06-->
+              <li class="pl-[20%] pb-4 flex flex-col items-start gap-2">
+                <a
+                  href="#"
+                  data-active="false"
+                  class="
+                    dropdownBtn
+                    flex
+                    items-center
+                    gap-3
+                    text-[19px]
+                    mt-4
+                    mb-2
+                    text-black
+                    font-sofia
+                  "
+                >
+                  New on EP
+                  <svg
+                    viewBox="0 0 7 6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mt-1 inline-block w-1.5 triangle"
+                  >
+                    <path
+                      d="M2.636,1.481a1,1,0,0,1,1.728,0L6.123,4.5A1,1,0,0,1,5.259,6H1.741A1,1,0,0,1,.877,4.5Z"
+                      fill="currentColor"
+                      data-name="Polygon 4"
+                    />
+                  </svg>
+                </a>
+                <ul
+                  class="
+                    dropdown
+                    flex flex-col
+                    gap-3
+                    overflow-hidden
+                    animate-slideInAlt
+                    dropdown
+                    hide
+                  "
+                >
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">New games</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">New NetEnt games</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">Best NetEnt games</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">Best casino slots</a>
+                  </li>
+                </ul>
+              </li>
+              <hr class="border-[#dee1e6]" />
+              <!--Dropdown Item Mobile End 06-->
+              <!--Dropdown Item Mobile 06-->
+              <li class="pl-[20%] pb-4 flex flex-col items-start gap-2">
+                <a
+                  href="#"
+                  data-active="false"
+                  class="
+                    dropdownBtn
+                    flex
+                    items-center
+                    gap-3
+                    text-[19px]
+                    mt-4
+                    mb-2
+                    text-black
+                    font-sofia
+                  "
+                >
+                  Contact us
+                  <svg
+                    viewBox="0 0 7 6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mt-1 inline-block w-1.5 triangle"
+                  >
+                    <path
+                      d="M2.636,1.481a1,1,0,0,1,1.728,0L6.123,4.5A1,1,0,0,1,5.259,6H1.741A1,1,0,0,1,.877,4.5Z"
+                      fill="currentColor"
+                      data-name="Polygon 4"
+                    />
+                  </svg>
+                </a>
+                <ul
+                  class="
+                    dropdown
+                    flex flex-col
+                    gap-3
+                    overflow-hidden
+                    animate-slideInAlt
+                    dropdown
+                    hide
+                  "
+                >
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">Support</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">Meet the team</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">Our brands</a>
+                  </li>
+                  <li class="font-normal text-[#959CA7] text-[17px]">
+                    <a href="#" class="font-sofia">FAQ</a>
+                  </li>
+                </ul>
+              </li>
+              <hr class="border-[#dee1e6]" />
+              <!--Dropdown Item Mobile End 06-->
+            </ul>
+          </div>
+        </nav>
+      </nav>
+      <my-app></my-app>
+      <!--Footer-->
+      <footer class="bg-lightBlue shadow-t-md font-sofia">
+        <div class="py-10 px-4 hidden md:flex justify-center gap-[12vw]">
+          <section>
+            <h3 class="text-[19px] font-bold">About us</h3>
+            <ul class="opacity-50">
+              <li><a href="#">Seals of approval</a></li>
+              <li><a href="#">Terms and conditions</a></li>
+              <li><a href="#">Competition Terms</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="text-[19px] font-bold">Learn more</h3>
+            <ul class="opacity-50">
+              <li><a href="#">What is EkstaPont</a></li>
+              <li><a href="#">Start using EkstraPoint</a></li>
+              <li><a href="#">Why EkstraPoint</a></li>
+              <li><a href="#">How to become top player</a></li>
+              <li><a href="#">EkstraPoint User Tiers</a></li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="text-[19px] font-bold">New on EP</h3>
+            <ul class="opacity-50">
+              <li><a href="#">New games</a></li>
+              <li><a href="#">New NetEnt gamest</a></li>
+              <li><a href="#">Best NetEnt games</a></li>
+              <li><a href="#">Best casino slots</a></li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="text-[19px] font-bold">Contact us</h3>
+            <ul class="opacity-50">
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Meet the team</a></li>
+              <li><a href="#">Our brands</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="bg-black py-10 px-[9%] flex flex-col items-center">
+          <img src="./images/logo-big.svg" alt="Logo" class="mb-4 w-40" />
+          <p class="text-[#7C838F] text-xs text-center hidden md:block">
+            18+ | Spil ansvarligt | StopSpillet: 70 22 28 25 | ROFUS.nu Husk at
+            pengespil kan være vanedannende, så spil ansvarligt. Hos EkstraPoint
+            gør vi derfor en indsats for at opretholde og følge retningslinjer
+            udstukket af den danske Spillemyndighed. Man skal være fyldt 18 både
+            for at spille på EkstraPoint, og på alle casinosider der er
+            repræsenteret herpå. Casino- og spilanmeldelser på vores side er som
+            udgangspunkt kommercielt indhold. Regler og vilkår gælder. Spil
+            ansvarligt. Selvudelukkelse via ROFUS. Kontakt Spillemyndighedens
+            hjælpelinje på StopSpillet.dk
+            <a href="https://www.spillemyndigheden.dk/"
+              >https://www.spillemyndigheden.dk/</a
+            >
+          </p>
+          <div
+            class="
+              flex-wrap
+              justify-center
+              items-center
+              gap-y-2
+              mt-6
+              hidden
+              md:flex
+            "
+          >
+            <div>
+              <img
+                class="max-w-[10.938rem] max-h-14 px-2"
+                src="./images/footer/gambleaware.png"
+              />
+            </div>
+            <div>
+              <img
+                class="max-w-[10.938rem] max-h-14 px-2"
+                src="./images/footer/mga.png"
+              />
+            </div>
+            <div>
+              <img
+                class="max-w-[10.938rem] max-h-14 px-2"
+                src="./images/footer/agerestrict.png"
+              />
+            </div>
+            <div>
+              <img
+                class="max-w-[10.938rem] max-h-14 px-2"
+                src="./images/footer/gpwa.gif"
+              />
+            </div>
+            <div>
+              <img
+                class="max-w-[10.938rem] max-h-14 px-2"
+                src="./images/footer/egr.webp"
+              />
+            </div>
+            <div>
+              <img
+                class="max-w-[10.938rem] max-h-14 px-2"
+                src="./images/footer/lottofy.webp"
+              />
+            </div>
+            <div>
+              <img
+                class="max-w-[10.938rem] max-h-14 px-2"
+                src="./images/footer/smartsoft.webp"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <log-in class="hide" id="login">
+      <button id="loginExit">
+        <img
+          class="absolute w-4 h-4 right-0 top-0"
+          src="./images/burger-exit.svg"
+          alt="Exit Button"
+        />
+      </button>
+    </log-in>
+    <script src="script.js"></script>
+  </body>
+</html>
