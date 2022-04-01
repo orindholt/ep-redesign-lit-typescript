@@ -90,6 +90,14 @@ export class Login extends LitElement {
         top: 0;
         left: 0;
       }
+      @-moz-document url-prefix() {
+        .lighten-backdrop {
+          background: #eaeff7;
+        }
+        .lighten-backdrop::before {
+          display: none;
+        }
+      }
     `,
   ];
 
