@@ -1011,6 +1011,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(241 245 250 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#00000050\] {
+  background-color: #00000050;
+}
+
+.bg-\[\#00000070\] {
+  background-color: #00000070;
+}
+
 .bg-gradient-to-bl {
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
 }
